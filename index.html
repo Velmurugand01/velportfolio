@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="./presentation (1) (1).gif">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+                <!-- navigation  -->
+
+        <nav class=" p-5 md:p-3 max-w-full text-white z-50">
+          <div class="flex justify-between ">
+             <div class="text-3xl my-auto flex font-extrabold transition-all delay-400 duration-1000 ">
+                 <a href="" class="px-3 ">VELMURUGAN</a>
+                 <!-- <img class="h-20 w-20 border border-white"  src="./360_F_468437516_sN9OEw58x6rya5qJJLi8xTqEyX4Wgaw0.jpg" alt=""> -->
+             </div> 
+                    <!-- for large screen  -->
+              <div class="mr-12 max-w-full ">
+                 <ul class=" align-middle hidden md:flex">
+                     <li class="text-center mx-7">
+                         <a href="#Home" class="block">
+                             <div class="icon text-2xl" > 
+                                 <i class="fa fa-home " aria-hidden="true"></i>
+                                 <i class="fa fa-home " aria-hidden="true"></i>
+                                 
+                             </div>
+                             <div class="name text-xl font-extrabold  transition-all delay-400 duration-1000 ">Home</div>
+                         </a>
+                     </li>
+     
+                     <!-- <li class="text-center mx-7 ">
+                         <a href="#">
+                             <div class="icon text-3xl" > 
+                                 <i class="fa  fa-address-card" aria-hidden="true"></i>
+                                 <i class="fa  fa-address-card" aria-hidden="true"></i>
+                             </div>
+                             <div class="name text-xl font-extrabold  transition-all delay-400 duration-1000 ">About</div>
+                         </a>
+                     </li> -->
+     
+                     <li class=" text-center mx-7 ">
+                         <a href="#Education">
+                             <div class="icon text-3xl mx-auto" > 
+                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                             </div>
+                             <div class="name text-xl font-extrabold  transition-all delay-400 duration-1000 ">Education</div>
+                         </a>
+                     </li>
+     
+                     <li class="text-center mx-7">
+                         <a href="#Skill">
+                             <div class="icon text-3xl" > 
+                                 <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                 <i class="fa fa-list-alt" aria-hidden="true"></i>
+                             </div>
+                             <div class="name text-xl font-extrabold  transition-all delay-400 duration-1000 ">Skills</div>
+                         </a>
+                     </li>
+     
+                     <li class="text-center mx-7">
+                         <a href="#contact" class="">
+                             <div class="icon text-3xl mx-auto"> 
+                                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                             </div>
+                             <div class="name text-xl font-extrabold transition-all delay-400 duration-1000">Contact</div>
+                         </a>
+                     </li> 
+                     
+                 </ul> 
+               </div>  
+                          <!-- button  -->
+               <span class="md:hidden transition-all text-2xl my-auto" id="button">
+                 <i class="fa-solid fa-bars" id="icon"></i>
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                   </svg>       
+               </span> 
+             </div> 
+                 
+                      <!-- mobile menu  -->
+     
+             <div class=" hidden md:hidden " id="mobile">
+                 <ul class="">
+                     <li class="mt-5 ">
+                         <a href="#Home" class="flex text-center ">
+                             <div class="icon text-2xl ">  
+                                 <i class="fa fa-home" aria-hidden="true"></i>
+                                 <i class="fa fa-home" aria-hidden="true"></i>
+                                 
+                             </div>
+                             <div class="name text-center text-xl font-extrabold   transition-all delay-400 duration-1000 mt-2"> Home</div>
+                         </a> 
+                     </li>
+     
+                     <!-- <li class="mt-3 ">
+                         <a href="#" class="flex text-center">
+                             <div class="icon text-2xl " > 
+                                 <i class="fa  fa-address-card" aria-hidden="true"></i>
+                                 <i class="fa  fa-address-card" aria-hidden="true"></i>
+                             </div>
+                             <div class="name  text-center text-xl font-extrabold  transition-all delay-400 duration-1000 mt-2">About</div>
+                         </a>
+                     </li>
+      -->
+                   
+                    <li class="mt-3">
+                         <a href="#Education" class="flex text-center ">
+                             <div class="icon text-2xl " > 
+                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                             </div>
+                             <div class="name text-center text-xl font-extrabold  transition-all delay-400 duration-1000 mt-1">Education</div>
+                         </a>
+                     </li>
+     
+                     <li class="mt-3 ">
+                         <a href="#Skill" class="flex text-center ">
+                             <div class="icon text-2xl" > 
+                                 <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                 <i class="fa fa-list-alt" aria-hidden="true"></i>
+                             </div>
+                             <div class="name text-xl font-extrabold  transition-all delay-400 duration-1000 mt-1"> Skill</div>
+                         </a>
+                     </li>
+     
+                     <li class="mt-3 ">
+                         <a href="#contact" class="flex text-center">
+                             <div class="icon text-2xl "> 
+                                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                             </div>
+                             <div class="name text-xl font-extrabold  transition-all delay-400 duration-1000 text-center mt-1"> Contact  </div>
+                         </a>
+                     </li> 
+                     
+                 </ul> 
+               </div>   
+        </nav>
+
+            <!-- section-1  -->
+
+        <section class="p-16 mt-10 max-h-full main" id="Home" data-aos="fade-left" >
+          <div>
+            
+          </div>
+            <div class="rounded-xl p-10">
+               <div class="flex justify-between flex-wrap  md:gap-0 z-10">
+                   <div class=" w-full md:w-1/2 mt-5">
+                              <!-- <h2 class=" text-2xl font-bold md:text-3xl ">Hii...</span></h2> -->
+                             <!-- <h2 class=" text-xl font-bold sm:font-bold lg:text-2xl  mt-8 ml-8" style="color:#ff206e;"> VELMURUGAN <span class="text-black" >Here,</span></h2> -->
+                              <div class="py-6">
+                                <span class="text-sm font-semibold md:text-xl font-bold lg:text-2xl font-serif "><p class="text-gray-900">I'M A-<span class="typing-text"></span></p></span>
+                              </div>
+                             <P class=" font-semibold sm:font-medium md:text-2xl text-gray-700">Obtain a Full Stack Developer role utilizing my expertise in Front-end and back-end development to build dynamic and innovative web applications that deliver exceptional user experinces.</P>
+                             <button class="last mx-auto mt-5 md: mt-16">
+                              <div>
+                                <span>
+                                  <p class="mx-auto ">Download CV</p>
+                                </span>
+                              </div>
+                              <div>
+                                <span>
+                                  <p class="mx-auto"> Thanks</p><p></p>
+                                </span>
+                              </div>
+                            </button>
+                            <!-- <button class="flex mx-auto mt-10 border border-black bg-blue-900 px-10 py-3 rounded-xl ">DOWNLOAD CV</button>  -->
+                            <!-- <div class=" mt-14 flex justify-center icons ">
+                              <button class="btn ml-6">
+                                <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                               </button>
+                               
+                               <button class="btn ml-6">
+                                <svg width="48" height="48" fill="#0092E4" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="github">
+                                  <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path>
+                                </svg>
+                              </button>
+                              <button>
+                                <button class="btn ml-6">
+                                  <img width="48" height="48" src="https://img.icons8.com/papercut/60/instagram-new.png" alt="instagram-new"/>
+                                </button>
+                              </button>
+                              
+                            </div> -->
+                    </div> 
+
+                   <div class=" w-full mt-5 md:w-1/2 mt-16 flex justify-center ">
+                              <img src="./undraw_feeling_proud_qne1-removebg-preview.png" alt="" class="h-96 w-96 ml-8 ">
+                   </div>
+      
+      
+                     
+              </div>  
+                     <!-- button Download CV  -->
+      
+            <!-- <div class="flex justify-center mt-9">
+              <button class="cta">
+                  <span class="span ">DOWNLOAD CV</span>
+                  <span class="second">
+                    <svg width="50px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                        <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                        <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                      </g>
+                    </svg>
+                  </span> 
+              </button>
+            </div>  -->
+        </div>
+                    
+        </section> 
+    
+        <!-- EDUCATION --> 
+       
+        <section class="fulledu mt-10 p-16 " id="Education" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+        <div>
+            <h1 class="font-bold text-4xl text-center mt-16 done" >EDUCATION</h1>
+        </div>      
+            <div class="educate pt-32 flex justify-around flex-wrap relative gap-9">
+              <div class="card relative bg-white my-10">
+                  <div class="imgbox absolute top-2">
+                     <img src="./graduation-cap (2).gif" alt="">
+                  </div>
+                  <div class="content  flex flex-wrap justify-center  overflow-hidden">
+                    <div class="details text-center md:p-8">
+                      <h1 class="head mt-14 md:mt-16 font-bold ">Qualification</h1>
+                      <h1 class="head ">SSLC</h1>
+                    <div class="data ">
+                       <h1 class="mt-8  md:mt-16 text-gray-500 font-normal text-xl  md:font-medium">Percentage-85.6</h1>
+                       <h1 class="mt-1 text-gray-500 font-normal text-xl  md:font-medium">PassedOut-2017</h1>
+                       <h1 class="mt-1 text-gray-500 font-normal text-xl md:font-medium">School-G.V.H.S.School</h1>
+                    </div>   
+                    </div>        
+                  </div>
+               </div> 
+              
+                     <div class="card relative bg-white my-10">
+                  <div class="imgbox absolute  top-2">
+                     <img src="./graduation-cap (2).gif" alt="">
+              
+                  </div>
+                  <div class="content flex flex-wrap justify-center overflow-hidden">
+                       <div class="details text-center p-8">
+                        <h1 class="head mt-14 md:mt-16 font-bold">Qualification</h1>
+                        <h1 class="head ">HSLC</h1>
+                        <div class="data ">
+                            <h1 class="mt-8 md:mt-12 text-gray-500 font-normal text-xl md:font-medium">Percentage-71.6</h1>
+                            <h1 class="mt-1 text-gray-500 font-normal text-xl md:font-medium">PassedOut-2019</h1>
+                            <h1 class="mt-1 text-gray-500 font-normal text-xl md:font-medium">School-G.V.H.S.School</h1>
+                        </div>   
+                       </div> 
+                  </div>
+                     </div>
+              
+                     <div class="card relative bg-white my-10 ">
+                  <div class="imgbox absolute  top-2">
+                    <img src="./graduation-cap (2).gif" alt="">
+              
+                  </div>
+                  <div class="content flex flex-wrap justify-center overflow-hidden">
+                       <div class="details  text-center p-8">
+                        <h1 class="head mt-14 md:mt-16">Qualification </h1>
+                        <h1 class="head block">B.E-ECE</h1>
+                        <div class="data ">
+                            <h1 class=" mt-10 md:mt-12 text-gray-500 font-normal text-xl md:font-medium">Percentage-80.2</h1>
+                            <h1 class=" mt-2 text-gray-500 font-normal text-xl md:font-medium">PassedOut-2023</h1>
+                            <h1 class="mt-2 text-gray-500 font-normal text-xl md:font-medium">College-Velalar College Of Engg &Technology</h1>
+                        </div>   
+                       </div>
+                      
+                       
+                  </div>
+                     </div>  
+             </div>  
+                      
+        </section>
+   
+         <!-- skill section  -->
+
+       <section class="skill mt-10 py-16 px-6" id="Skill" data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
+            <h1 class="text-center  text-4xl font-bold done mt-16" > SKILLS</h1>
+                  <!-- <p class="font-medium text-xl text-center mx-10 tracking-wider">"Mention the popular and powerful technology stack for building dynamic web applications. Truly, the technology I've learned and used in responsive website projects."</p> -->
+         <div class=" md:mt-2 w-full px-5">
+            <!-- <h1 class="text-2xl font-semibold text-gray-600 text-center">WEB DEVELOPMENT/TOOLS:</h1> -->
+            <div class="flex justify-center  flex-wrap  gap-4 md:gap-10 mt-10 ">
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/arcade/64/html-5.png" alt="html-5"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/stickers/100/css3.png" alt="css3"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/arcade/64/javascript.png" alt="javascript"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/plasticine/100/tailwind_css.png" alt="tailwind_css"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/nolan/64/react-native.png" alt="react-native"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/nolan/64/express-js.png" alt="express-js"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/color/48/mongodb.png" alt="mongodb"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/nolan/64/sql.png" alt="sql"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/ios-filled/50/22C3E6/visual-studio.png" alt="visual-studio"/></span>
+            <span class=" vel  md:ml-10 bg-gray-100 p-4  md:p-6 rounded-2xl hover:bg-transparent"><img  width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></span>
+            <!-- <span class=" vel ml-10 bg-gray-200 p-4 rounded-xl hover:bg-transparent"><img width="80" height="80" src="https://img.icons8.com/ios/50/1A1A1A/mysql-logo.png" alt="mysql-logo"/></span> -->
+                  </div>
+          </div>
+                 
+       </section>   
+
+       <!-- contact-me  -->
+
+     <footer class="py-12 mt-16 mb-5 foot relative" id="contact" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+          <h1 class="text-4xl font-bold text-center done mt-16">Contact</h1>   
+      <!-- <h2 class="text-2xl font-bold text-center text-gray-500 mt-2">-Who I Am-</h2>  -->
+       <div class=" flex justify-between flex-wrap ">
+
+            <div class="my-auto w-full lg:w-1/2 "> 
+              <!-- <h1 class="text-2xl font-bold text-gray-400 text-center mt-8">Wanna Discuss a project with us</h1>
+              <h2 class="text-2xl font-bold text-gray-400 text-center mt-1">Send us a message!</h2> -->
+                <span class="flex justify-center align-baseline font-normal md:text-2xl font-bold mt-16 ">
+
+                      <img src="./gmail (1).png" alt="" class="h-8 w-8">
+                    <h1 class="ml-3  text-xl font-bold md:text-2xl font-bold text-gray-700">velmurugand@gmail.com</h1>
+                </span >
+                <span class="flex justify-center align-baseline  font-normal md:text-2xl md:mx-32 font-bold  mt-8 ">
+                  <img src="./old-typical-phone.png" alt="" class="h-8 w-8">
+                    <h1 class="ml-3 text-xl font-bold md:text-2xl font-bold  text-gray-700">9080187309</h1>
+                </span>
+
+                <div class=" mt-14 flex justify-center text-blue-700 text-5xl icons ">
+                  <button class="btn ml-6">
+               <a href="https://www.linkedin.com/in/velmurugan-d-b40245252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"> <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/> </a>
+                   </button>
+                   
+                   <button class="btn ml-6">
+              <a href="https://github.com/Velmurugand01" target="_blank"> <svg width="48" height="48" fill="#0092E4" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="github"> 
+                      <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path>
+                    </svg> </a>
+                  </button>
+                  <button>
+                    <button class="btn ml-6">
+                      <img width="48" height="48" src="https://img.icons8.com/papercut/60/instagram-new.png" alt="instagram-new"/>
+                    </button>
+                  </button>
+                  
+                </div>
+              
+            </div>
+    
+            <div class=" w-full lg:w-1/2 mt-12 ">
+                <form action="" class=" flex  flex-col mx-8">
+                    <input type="text" placeholder="Your Name" class="h-16 w-11/12 mx-6 rounded-xl mt-3 pl-5">
+                    <input type="email" placeholder="Your Email" class="h-16 w-11/12 mx-6 rounded-xl mt-2  pl-5">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Your Message" class=" w-11/12  rounded-xl mx-6 mt-3 pl-5 pt-5"></textarea>
+                   
+                </form>
+                <button class="last mx-auto mt-10 ">
+                  <div>
+                    <span>
+                      <p class="mx-auto">SUBMIT</p>
+                    </span>
+                  </div>
+                  <div>
+                    <span>
+                      <p class="mx-auto"> Thanks</p><p></p>
+                    </span>
+                  </div>
+                </button>
+        
+            </div>
+            
+        </div>
+            
+        <!-- button  -->
+
+      
+       
+     </footer>        
+
+    
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+           <script src="./index.js"></script>
+
+           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+           <script>
+            AOS.init();
+          </script>
+</body>
+</html>
